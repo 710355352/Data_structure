@@ -7,7 +7,7 @@ def shell(line:list )->list:
     gap = 1
     while gap < len(line)/3:
         gap = 3*gap + 1
-        print(gap)
+        # print(gap)
     while gap > 0:
         for i in range(len(line)-gap):
             cur = line[i+gap]
@@ -17,7 +17,7 @@ def shell(line:list )->list:
                 pre-=gap
             line[pre+gap] = cur
         gap = int(gap/3)
-        print(gap)
+        # print(gap)
     return line
 
 
