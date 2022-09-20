@@ -1,5 +1,6 @@
 import random
-
+import sys
+sys.setrecursionlimit(10000) 
 
 def partation(line,left,right):
     att = line[left]
@@ -27,8 +28,8 @@ def Quick_Sort(line:list, left = 0, right = None)->list:
     第二步是递归调用该元素剩下的左右序列
     '''
     # print(left,right)
-    if line == []:
-        return line
+    # if line == []:
+    #     return line
     if left < right:
         mid = partation(line,left,right)
         # print(line)
@@ -37,7 +38,7 @@ def Quick_Sort(line:list, left = 0, right = None)->list:
 
 
 if __name__ == '__main__':
-    line = [random.randint(0,30) for i in range(20000)]
-    print(line)
+    line = [random.randint(0,300000) for i in range(30000)]
+    # print(line)
     Quick_Sort(line,0,len(line)-1)
     print(line)
