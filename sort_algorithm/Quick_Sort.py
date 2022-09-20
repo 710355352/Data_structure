@@ -37,7 +37,7 @@ def Quick_Sort(line:list, left = 0, right = None)->list:
 
 
 if __name__ == '__main__':
-    line = [random.randint(0,30) for i in range(20)]
+    line = [random.randint(0,30) for i in range(20000)]
     print(line)
     Quick_Sort(line,0,len(line)-1)
     print(line)
