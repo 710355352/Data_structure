@@ -34,6 +34,6 @@ def bubble_sort(line:List,arg = None) -> List:
     return line 
 
 if __name__ == '__main__':
-    line = [random.randint(0,20) for i in range(20000)]
+    line = [random.randint(0,20) for i in range(20)]
     print(line)
     print(bubble_sort(line))
