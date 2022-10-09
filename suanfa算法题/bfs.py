@@ -9,7 +9,6 @@ n,m = len(maze), len(maze[0])
 ans = []
 li = []
 move = [(0,1),(0,-1),(1,0),(-1,0)]
-
 def bfs():
     Out = [(0,0)]
     In = [(1,0)]
