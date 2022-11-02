@@ -30,6 +30,9 @@
     <ClCompile Include="teacher_students.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="student_class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bubble_sort.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="teacher_students.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="student_class.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

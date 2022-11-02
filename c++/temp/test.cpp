@@ -1,5 +1,5 @@
 #include "test.h"
-
+int a = 605;
 struct Student {
 	string name;
 	int age;
@@ -13,8 +13,37 @@ void out(Student s)
 	cout <<"s 的地址是 " <<(int) & s << "\t name的地址是 " << (int)&s.name << "\t age的地址是" << (int)&s.age << "\t score的地址是" << (int)&s.score << endl;
 }
 
+
+//void fun(int& a);
+void fun(const int& a);
+
+//void fun(int& a)
+//{
+//	cout << &a << endl;
+//	cout << "fun(int &a )" << endl;
+//}
+
+void fun(const int& a)
+{
+	cout << &a << endl;
+	cout << "fun(const int &a )" << endl;
+}
+
 void test()
 {
+	int temp = 10;
+	fun(temp);
+	fun(temp);
+	fun(temp);
+	fun(temp);
+	/*int temp = 10;
+	const int& ref = temp;
+	const int& ref1 = 10;
+	cout << "temp  = " << temp << "\t temp 地址是 " << &temp << endl;
+	cout << "ref  = " << ref << "\t ref 地址是 " << &ref << endl;
+	cout << "ref1  = " << ref1 << "\t ref1 地址是 " << &ref1 << endl;*/
+	/*
+	// 这一部分是实验结构体数组的指针以及地址问题
 	cout << (char)(5) << endl;
 	Student s1 {"wb",25,90};
 	Student s2 = { "lj",24,91 };
@@ -33,5 +62,6 @@ void test()
 	cout << p3<<"\t"<<p3+1 << "\t" << *p3<<"\t"<<*(p3+1) << endl;//实验证明，int型的指针可以访问int型变量的内存地址的内容
 	out(s1);
 	out(s2);
+	system("pause");*/
 	system("pause");
 }

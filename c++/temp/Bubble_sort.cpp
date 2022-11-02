@@ -2,6 +2,7 @@
 #define len 20
 void bubble_sort()
 {
+	
 	cout << "这是一个冒泡排序算法！！" << endl;
 	cout << "随机初始化一个容量为" << len << "的数组" << endl;
 	cout << "数组为:\n";

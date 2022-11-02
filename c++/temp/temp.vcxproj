@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bubble_sort.cpp" />
+    <ClCompile Include="student_class.cpp" />
     <ClCompile Include="teacher_students.cpp" />
     <ClCompile Include="temp.cpp" />
     <ClCompile Include="test.cpp" />
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bubble_sort.h" />
+    <ClInclude Include="student_class.h" />
     <ClInclude Include="teacher_students.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="水仙花数.h" />
