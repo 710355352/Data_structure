@@ -34,7 +34,7 @@ def sift(li, low, high):
         if li[j] > tmp: # 如果最大值比tmp大，那么就将孩子j 与 i的位置互换（实际上不需要，只需更换i的值即可）
             li[i] = li[j]
             i = j # 此时的i就变为j的位置，并继续循环
-            j = 2 * i + 1 # j仍未i的左孩子
+            j = 2 * i + 1 # j仍为i的左孩子
         else: # 如果tmp比两个孩子都大，那么tmp就应该在i这个位置上, 并且结束循环
             li[i] = tmp
             break
